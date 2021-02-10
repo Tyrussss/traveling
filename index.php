@@ -81,14 +81,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="form_area">
-                        <h3>Where you want to go?</h3>
+                        <h3>Bạn muốn đi đâu?</h3>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="search_wrap">
                         <form class="search_form" action="#">
                             <div class="input_field">
-                                <input type="text" placeholder="Where to go?">
+                                <input type="text" placeholder="Nhập địa điểm">
                             </div>
                             <div class="input_field">
                                 <input id="datepicker" placeholder="Date">
@@ -101,7 +101,7 @@
                                 </select>
                             </div>
                             <div class="search_btn">
-                                <button class="boxed-btn4 " type="submit" >Search</button>
+                                <button class="boxed-btn4 " type="submit" >Tìm</button>
                             </div>
                         </form>
                     </div>
@@ -248,7 +248,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>California</h3></a>
+                            <a href="destination_details.php"><h3>California</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
@@ -274,7 +274,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>Korola Megna</h3></a>
+                            <a href="destination_details.php"><h3>Korola Megna</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
@@ -300,7 +300,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>London</h3></a>
+                            <a href="destination_details.php"><h3>London</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
@@ -326,7 +326,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>Miami Beach</h3></a>
+                            <a href="destination_details.php"><h3>Miami Beach</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
@@ -352,7 +352,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>California</h3></a>
+                            <a href="destination_details.php"><h3>California</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
@@ -378,7 +378,7 @@
                             <a href="#" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3>Saintmartine Iceland</h3></a>
+                            <a href="destination_details.php"><h3>Saintmartine Iceland</h3></a>
                             <p>United State of America</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
