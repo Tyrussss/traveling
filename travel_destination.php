@@ -138,8 +138,8 @@
                                     <a href="#" class="prise">$500</a>
                                 </div>
                                 <div class="place_info">
-                                    <a href="destination_details.html"><h3>California</h3></a>
-                                    <p>United State of America</p>
+                                    <a href="destination_details.html"><h3>NHA TRANG – ĐÀ LẠT MỪNG XUÂN TÂN SỬU</h3></a>
+                                    <p><b style="color: black">Địa điểm tham quan:</b> VINWONDERS - THÁP BÀ - CHÙA LONG SƠN - DU NGOẠN ĐẢO - DINH BẢO ĐẠI</p>
                                     <div class="rating_days d-flex justify-content-between">
                                         <span class="d-flex justify-content-center align-items-center">
                                              <i class="fa fa-star"></i> 
