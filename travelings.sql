@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 27, 2021 at 10:25 AM
+-- Generation Time: Mar 01, 2021 at 11:17 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -75,14 +75,15 @@ CREATE TABLE IF NOT EXISTS `tours` (
   KEY `Tours_fk0` (`author`),
   KEY `Tours_fk2` (`traveltype`),
   KEY `Tours_fk4` (`zone`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tours`
 --
 
 INSERT INTO `tours` (`idtour`, `name`, `price`, `time`, `place`, `author`, `traveltype`, `image`, `zone`) VALUES
-(1, 'ĐÀ LẠT – MỪNG XUÂN TÂN SỬU', 5000000, 4, 'DINH BẢO ĐẠI - NHÀ THỜ - THÁC DANTALA - VƯỜN HOA THÀNH PHỐ - LANGBIANG - GA XE LỬA CỔ - LÀNG HOA VẠN THÀNH - THÁC VOI - CHÙA LINH ẨN', 'admin', 4, 'dalat.jpg', 'dalat');
+(1, 'ĐÀ LẠT – MỪNG XUÂN TÂN SỬU', 5000000, 4, 'DINH BẢO ĐẠI - NHÀ THỜ - THÁC DANTALA - VƯỜN HOA THÀNH PHỐ - LANGBIANG - GA XE LỬA CỔ - LÀNG HOA VẠN THÀNH - THÁC VOI - CHÙA LINH ẨN', 'admin', 4, 'dalat.jpg', 'dalat'),
+(6, 'Test', 99999, 4, 'DINH BẢO ĐẠI - NHÀ THỜ - THÁC DANTALA - VƯỜN HOA THÀNH PHỐ - LANGBIANG - GA XE LỬA CỔ - LÀNG HOA VẠN THÀNH - THÁC VOI - CHÙA LINH ẨN', 'admin', 3, 'wall1.jpg', 'phanthiet');
 
 -- --------------------------------------------------------
 
