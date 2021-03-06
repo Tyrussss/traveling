@@ -19,6 +19,7 @@
 
 <head>
     <?php include 'subpage/head.php'; ?>
+    <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -161,6 +162,19 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">Tour Detail</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <textarea class="form-control p-0 border-0" name="detail" id="detail"></textarea>
+                                        </div>
+                                    </div>
+                                    <script>
+        ClassicEditor
+            .create( document.querySelector( '#detail' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
                                     <div class="form-group mb-4">
                                         <label class="col-md-12 p-0">Author</label>
                                         <div class="col-md-12 border-bottom p-0">

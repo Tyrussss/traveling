@@ -13,6 +13,7 @@
 	$traveltype = post('traveltype');
 	$zone = post('zone');
 	$author = post('author');
+	$detail = post('detail');
 
 	$sql = "insert into tours (name, price, time, place, author, traveltype, image, zone) 
 	values (?,?,?,?,?,?,?,?)";
@@ -20,6 +21,13 @@
 
 	$user = new Tour;
 	$user -> insertTour($sql, $arr);
+
+	$data = $user -> getIdTour();
+	$idtour = $data['idtour'];
+
+	$sql = "insert into tourdetail (idtour, detail) values (?,?)";
+	$arrs = [$idtour, $detail];
+	$user -> insertTour($sql, $arrs);
 
 	header('location: ../tour_table.php');
 	exit;

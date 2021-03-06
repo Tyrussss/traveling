@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 01, 2021 at 11:17 AM
+-- Generation Time: Mar 06, 2021 at 08:53 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS `tourbooking` (
   `idtour` int(255) NOT NULL,
   `namecustomer` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `phonenumber` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `message` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `date` datetime NOT NULL,
   `status` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
@@ -47,12 +48,18 @@ CREATE TABLE IF NOT EXISTS `tourbooking` (
 
 DROP TABLE IF EXISTS `tourdetail`;
 CREATE TABLE IF NOT EXISTS `tourdetail` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idtour` int(11) NOT NULL,
   `detail` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `Tourdetail_fk0` (`idtour`)
+  PRIMARY KEY (`idtour`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tourdetail`
+--
+
+INSERT INTO `tourdetail` (`idtour`, `detail`) VALUES
+(1, '<p>Test Test sdsddddđ</p>'),
+(7, '<p>jasndkkkkkkkkkksssssuwwwwwwwwwwwwwwwwwwwwww</p>');
 
 -- --------------------------------------------------------
 
@@ -75,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `tours` (
   KEY `Tours_fk0` (`author`),
   KEY `Tours_fk2` (`traveltype`),
   KEY `Tours_fk4` (`zone`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tours`
@@ -83,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `tours` (
 
 INSERT INTO `tours` (`idtour`, `name`, `price`, `time`, `place`, `author`, `traveltype`, `image`, `zone`) VALUES
 (1, 'ĐÀ LẠT – MỪNG XUÂN TÂN SỬU', 5000000, 4, 'DINH BẢO ĐẠI - NHÀ THỜ - THÁC DANTALA - VƯỜN HOA THÀNH PHỐ - LANGBIANG - GA XE LỬA CỔ - LÀNG HOA VẠN THÀNH - THÁC VOI - CHÙA LINH ẨN', 'admin', 4, 'dalat.jpg', 'dalat'),
-(6, 'Test', 99999, 4, 'DINH BẢO ĐẠI - NHÀ THỜ - THÁC DANTALA - VƯỜN HOA THÀNH PHỐ - LANGBIANG - GA XE LỬA CỔ - LÀNG HOA VẠN THÀNH - THÁC VOI - CHÙA LINH ẨN', 'admin', 3, 'wall1.jpg', 'phanthiet');
+(7, 'Test2', 123456, 9, 'home toussss', 'admin', 3, 'wall2.jpg', 'phanthiet');
 
 -- --------------------------------------------------------
 

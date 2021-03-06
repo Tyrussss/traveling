@@ -107,6 +107,7 @@
                                             <th class="border-top-0">Zone</th>
                                             <th class="border-top-0">Image</th>
                                             <th class="border-top-0">Author</th>
+                                            <th class="border-top-0">Detail</th>
                                             <th class="border-top-0">Option</th>
                                         </tr>
                                     </thead>
@@ -125,6 +126,7 @@
                                                  	<td><?php echo $value['zone'] ?></td>
                                                  	<td><img width="150px;" height="100px;" src="../img/imgtour/<?php echo $value['image'] ?>" alt="<?php echo $value['image'] ?>"></td>
                                                     <td><?php echo $value['author'] ?></td>
+                                                    <td><button style="color: white" class="btn btn-success" onclick="window.location.href='tour/detail.php?idtour=<?php echo $value['idtour'] ?>'">Detail</button></td>
                                                     <td><button class="btn btn-danger" onclick="window.location.href='tour/delete.php?idtour=<?php echo $value['idtour'] ?>'">Delete</button></td>
                                                     <td><button class="btn btn-danger" onclick="window.location.href='profile_tour.php?idtour=<?php echo $value['idtour'] ?>'">Update</button></td>
                                                 </tr>

@@ -11,6 +11,21 @@
 			return $this->queryUpdate($sql, $arr);
 		}
 
+		function getIdTour() {
+			$sql = "select * from `tours` order by idtour desc limit 1";
+			return $this->querySelectFetch($sql);
+		}
+
+		function updateDetail($sql, $arr) {
+			return $this->queryUpdate($sql, $arr);
+		}
+
+		function getDetail($idtour) {
+			$sql = "select * from tourdetail where idtour=?";
+			$arr = [$idtour];
+			return $this->querySelectFetch($sql, $arr);
+		}
+
 		function insertTour($sql, $arr) {
 			return $this->queryUpdate($sql, $arr);
 		}
